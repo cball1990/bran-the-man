@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bran The Man</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Brantheman.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="houses.html">House's</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="char.html">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Welcome To BranTheMan.com!</h1>
+      <p class="lead">The one stop shop for all you're Game Of Thones needs. Use the categories below to view information on each section.</p>
+      <a href="#" class="btn btn-primary btn-lg">Donate</a>
+    </header>
+    
+    
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://vignette.wikia.nocookie.net/iceandfire/images/9/93/Arryn_Main_Sigil.png/revision/latest?cb=20180127111950" alt="">
+          <div class="card-body">
+            <h4 class="card-title">House Arryn</h4>
+            <p class="card-text">House Arryn of the Eyrie is one of the Great Houses of Westeros, and is the principal noble house in the Vale of Arryn.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findHouse('House Arryn of the Eyrie')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://www.charmsaddict.com/wp-content/uploads/2015/05/game-of-thrones-baratheon-wallpaper.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">House Baratheon</h4>
+            <p class="card-text">House Baratheon of Storm's End is one of the Great Houses of Westeros, and is the principal house in the stormlands, which they rule as Lords Paramount of the Stormlands.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findHouse(`House Baratheon of Storm's End`)" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://cdn.dribbble.com/users/1713234/screenshots/3721397/greyjoy.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">House Greyjoy</h4>
+            <p class="card-text">House Greyjoy of Pyke is one of the Great Houses of Westeros. It rules over the Iron Islands,
+            a harsh and bleak collection of forbidding islands off the west coast of Westeros, from the Seastone Chair in the castle of Pyke on the island of the same name.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findHouse('House Greyjoy of Pyke')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://imgix.ranker.com/user_node_img/50025/1000492399/original/tytos-lannister-tv-characters-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces" alt="">
+          <div class="card-body">
+            <h4 class="card-title">House Lannister</h4>
+            <p class="card-text">House Lannister of Casterly Rock is one of the Great Houses of Seven Kingdoms, and the principal house of the westerlands. Their seat is Casterly Rock,
+            though another branch exists that is based in nearby Lannisport. Their sigil is a golden lion on a field of crimson.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findHouse('House Lannister of Casterly Rock')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="http://pm1.narvii.com/6096/344068fdafa72b8eb1f784c74db2398d888b2eaf_00.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">House Martell</h4>
+            <p class="card-text">House Nymeros Martell of Sunspear, usually simply called House Martell, is one of the Great Houses of the Seven Kingdoms and the ruling house of Dorne.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findHouse('House Nymeros Martell of Sunspear')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://i1.wp.com/www.ucreative.com/wp-content/uploads/2012/08/house_stark_wallpaper_v_2__tv_show_colors__by_siriuscrane-d53igx8-600x450.jpg?resize=600%2C450" alt="">
+          <div class="card-body">
+            <h4 class="card-title">House Stark</h4>
+            <p class="card-text">House Stark of Winterfell is one of the Great Houses of Westeros and the principal noble house of the north. In days of old they ruled as Kings of Winter,
+            but since Aegon's Conquest they have been Wardens of the North and ruled as Lords of Winterfell.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findHouse('House Stark of Winterfell')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://nofilmschool.com/sites/default/files/styles/article_wide/public/house_targaryen.jpg?itok=A-ELvPGQ" alt="">
+          <div class="card-body">
+            <h4 class="card-title">House Targaryen</h4>
+            <p class="card-text">House Targaryen of King's Landing is a noble family of Valyrian descent who once ruled the Seven Kingdoms of Westeros.
+            The Targaryen sigil is a three-headed dragon breathing flames, red on black. The house words are "Fire and Blood".</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findHouse(`House Targaryen of King's Landing`)" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://www.thewrap.com/wp-content/uploads/2016/05/wallpaper-tully-1600.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">House Tully</h4>
+            <p class="card-text">House Tully of Riverrun is one of the Great Houses of the Seven Kingdoms.
+            Lord Hoster Tully, the Lord Paramount of the Trident, rules over the riverlands from the Tully seat of Riverrun.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findHouse('House Tully of Riverrun')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://imagesvc.timeincapp.com/v3/fan/image?url=https%3A%2F%2Fwinteriscoming.net%2Ffiles%2F2016%2F02%2Fhouse-Tyrell.jpg&c=sc&w=736&h=485" alt="">
+          <div class="card-body">
+            <h4 class="card-title">House Tyrell</h4>
+            <p class="card-text">House Tyrell of Highgarden is one of the Great Houses of the Seven Kingdoms, being Lords Paramount of the Mander and the liege lords of the Reach.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findHouse('House Tyrell of Highgarden')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Craig Ball 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+  <script src="js/houses.js" type="text/javascript"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

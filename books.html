@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Bran The Man</title>
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Brantheman.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="books.html">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="houses.html">House's</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="char.html">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Welcome To BranTheMan.com!</h1>
+      <p class="lead">The one stop shop for all you're Game Of Thones needs. Use the categories below to view information on each section.</p>
+      <a href="#" class="btn btn-primary btn-lg">Donate</a>
+    </header>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle"></h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51HoTTx2ZhL._SX327_BO1,204,203,200_.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">A Game of Thrones</h4>
+            <p class="card-text">A Game of Thrones is the first novel in A Song of Ice and Fire, a series of fantasy novels by the American author George R. R. Martin.
+            It was first published on August 1, 1996. The novel won the 1997 Locus Award and was nominated for both the 1997 Nebula Award and the 1997 World Fantasy Award.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findBook('A Game of Thrones')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/91Nl6NuijHL.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">A Clash of Kings</h4>
+            <p class="card-text">A Clash of Kings is the second novel in A Song of Ice and Fire, an epic fantasy series by American author George R. R. Martin expected to consist of seven volumes.
+            It was first published on 16 November 1998 in the United Kingdom, although the first United States edition did not follow until February 2, 1999</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findBook(`A Clash of Kings`)" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://i.thenile.io/r1000/9780007459469.jpg?r=5cd5458d80287" alt="">
+          <div class="card-body">
+            <h4 class="card-title">	A Storm of Swords</h4>
+            <p class="card-text">A Storm of Swords is the third of seven planned novels in A Song of Ice and Fire, a fantasy series by American author George R. R. Martin. It was first published on August 8, 2000, in the United Kingdom, with a United States edition following in November 2000.
+            Its publication was preceded by a novella called Path of the Dragon,
+            which collects some of the Daenerys Targaryen chapters from the novel into a single book.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findBook('A Storm of Swords')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="data:image/jpeg;base64,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" alt="">
+          <div class="card-body">
+            <h4 class="card-title">A Feast for Crows</h4>
+            <p class="card-text">A Feast for Crows is the fourth of seven planned novels in the epic fantasy series A Song of Ice and Fire by American author George R. R. Martin.
+            The novel was first published on October 17,
+            2005, in the United Kingdom, with a United States edition following on November 8, 2005.</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findBook('A Feast for Crows')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://d1466nnw0ex81e.cloudfront.net/n_iv/600/1029151.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">A Dance with Dragons</h4>
+            <p class="card-text">A Dance with Dragons is the fifth novel, of seven planned, in the epic fantasy series A Song of Ice and Fire by American author George R. R. Martin. In some areas, the paperback edition was published in two parts,
+            titled Dreams and Dust and After the Feast. It was the first novel in the series to be published following the commencement of the HBO series adaptation</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" onclick="findBook('A Dance with Dragons')" data-toggle="modal" data-target="#exampleModalCenter">Find Out More!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://i.pinimg.com/originals/6e/75/ad/6e75ad05b39b60022ea2fad30dc8c538.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">The Winds of Winter</h4>
+            <p class="card-text">The Winds of Winter is the planned sixth novel in the epic fantasy series A Song of Ice and Fire by American writer George R. R. Martin.
+                Martin believes the last two volumes of the series will be books of 1,500+ manuscript pages each</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary">Forthcoming!</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100">
+          <img class="card-img-top" src="https://rossonl.files.wordpress.com/2016/09/dream-of-spring.jpg" alt="">
+          <div class="card-body">
+            <h4 class="card-title">A Dream of Spring</h4>
+            <p class="card-text">Forthcoming</p>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary">Forthcoming!</button>
+          </div>
+        </div>
+      </div>
+      
+
+      
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Craig Ball 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+  <script src="js/books.js" type="text/javascript"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
